@@ -3,7 +3,7 @@ import logofile from "./logo.jpg"
 import './App.css';
 
 
-function App() {
+function Login() {
   return (
     
     <div className="container-fluid h-100"  >
@@ -48,4 +48,4 @@ function App() {
   );
 }
 
-export default App;
+export default Login;
