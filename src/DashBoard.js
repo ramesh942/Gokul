@@ -8,10 +8,10 @@ function DashBoard() {
     <div className="container-fluid h-100">
       <div
         className="row"
-        // style={{ backgroundColor: "red"}}
+        style={{ backgroundColor: "#f9fafb" }}
       >
-        <div className="col-md-3" style={{ backgroundColor: "" }}>
-          <div className="row">
+        <div className="col-md-3">
+          <div className="row" >
             <div className="col-md-2  border-right">
               <div className="sidebar ">
                 <i className="fa fa-chevron-left "></i>
@@ -78,282 +78,240 @@ function DashBoard() {
         <div className="col-md-3">
           <div class="text-icon-big rounded-circle ">V</div>
         </div>
-     
-      <div className="list-group"style={{ backgroundColor: "#f9fafb" }}>
-    
-        <div className="col-md-4" >
-          <p>
-            <i className="fas fa-tachometer-alt mr-3">&nbsp;&nbsp;&nbsp;DashBoard</i>
-          </p>
-          <p>
-            <i className="fas fa-money-bill mr-3">&nbsp;&nbsp;&nbsp;Payroll</i>
-          </p>
-          <p style={{ color: "#2a7fff",fontWeight:"bold" }}>
-            <i className="fas fa-file-invoice-dollar mr-4">&nbsp;&nbsp;&nbsp;&nbsp;Payables</i>
-          </p>
-          <p>
-            <i className="fas fa-hand-holding-usd mr-3">&nbsp;&nbsp;&nbsp;Receivables</i>
-          </p>
-          <p>
-            <i className="fas fa-user-tag mr-3">&nbsp;&nbsp;&nbsp;Vendors</i>
-          </p>
-          <p>
-            <i className="fas fa-users mr-3">&nbsp;&nbsp;&nbsp;customers</i>
-          </p>
-          <p>
-            <i className="fas fa-list mr-4">&nbsp;&nbsp;&nbsp;&nbsp;Reports</i>
-          </p>
-          <p>
-            <i className="fas fa-cog mr-4">&nbsp;&nbsp;&nbsp;&nbsp;Setting</i>
-          </p>
-        
+
+        <div className="list-group" style={{ backgroundColor: "#f9fafb" }}>
+          <div className="col-md-4">
+            <p>
+              <i className="fas fa-tachometer-alt mr-3">
+                &nbsp;&nbsp;&nbsp;DashBoard
+              </i>
+            </p>
+            <p>
+              <i className="fas fa-money-bill mr-3">
+                &nbsp;&nbsp;&nbsp;Payroll
+              </i>
+            </p>
+            <p style={{ color: "#2a7fff", fontWeight: "bold" }}>
+              <i className="fas fa-file-invoice-dollar mr-4">
+                &nbsp;&nbsp;&nbsp;&nbsp;Payables
+              </i>
+            </p>
+            <p>
+              <i className="fas fa-hand-holding-usd mr-3">
+                &nbsp;&nbsp;&nbsp;Receivables
+              </i>
+            </p>
+            <p>
+              <i className="fas fa-user-tag mr-3">&nbsp;&nbsp;&nbsp;Vendors</i>
+            </p>
+            <p>
+              <i className="fas fa-users mr-3">&nbsp;&nbsp;&nbsp;customers</i>
+            </p>
+            <p>
+              <i className="fas fa-list mr-4">
+                &nbsp;&nbsp;&nbsp;&nbsp;Reports
+              </i>
+            </p>
+            <p>
+              <i className="fas fa-cog mr-4">&nbsp;&nbsp;&nbsp;&nbsp;Setting</i>
+            </p>
+          </div>
+        </div>
+
+        <div className="col-md-10">
+          <div className="card" style={{ backgroundColor: "#FFF" }}>
+            <div
+              class="col-md-12"
+              style={{
+                textAlign: "center",
+                backgroundColor: "#fff",
+                marginTop: "10px"
+              }}
+            >
+              <h5>PayIQ</h5>
+            </div>
+            <div className="row">
+          
+             
+              <div className="col-md-2"style={{backgroundColor:"gray",marginLeft:"20px",borderRadius:"5%",height:"100%"}}>
+              <text>Total Ammount</text>  
+              <h5>$30,440</h5>            
+              </div>
+              
+             
+              <div className="col-md-2"style={{backgroundColor:"red",marginLeft:"20px",borderRadius:"5%"}}>
+             < text>Critical</text>  
+              <h5>$9,177</h5> 
+                </div>
+                <div className="col-md-2"style={{backgroundColor:"#fd7e14",marginLeft:"20px",borderRadius:"5%"}}>
+                < text>High</text>  
+              <h5>$2,767</h5> 
+                </div>
+                <div className="col-md-2"style={{backgroundColor:"#ffc107",marginLeft:"20px",borderRadius:"5%"}}>
+                < text>Medium</text>  
+              <h5>$8,012</h5> 
+                </div>
+                
+              <div className="col-md-2"style={{backgroundColor:"#28a745",marginLeft:"20px",borderRadius:"5%"}}>
+              < text>Low</text>  
+              <h5>$10,483</h5> 
+              </div>
+           
+            </div>
+
+            <div className="small">
+              <div className="row">
+                <div className="col-md-2">
+                  &nbsp; &nbsp; &nbsp; &nbsp;
+                  <button className="btn">
+                    <i class="fas fa-sliders-h"></i> Filter{" "}
+                    <i className=" fas fa-caret-down"></i>
+                  </button>
+                </div>
+
+                <button className="btn" style={{ marginLeft: "70%" }}>
+                  Export <i className=" fas fa-caret-down"></i>
+                </button>
+              </div>
+            </div>
+   
+            <table>
+              <tr>
+            
+                <th >
+                <text  style={{display:"inline-block"}}>invoice</text>&nbsp;
+                 <i className=" fas fa-caret-up" style={{display:"inline-block"}}></i>
+                 <i className=" fas fa-caret-down" style={{display:"block", marginTop:"-10px",marginLeft:"83%"}}></i>
+              
+                </th>
+                <th >
+                Vendors&nbsp;
+                 <i className=" fas fa-caret-up" style={{display:"inline-block"}}></i>
+                 <i className=" fas fa-caret-down" style={{display:"block", marginTop:"-10px",marginLeft:"32%"}}></i>
+                </th>
+                <th>PayIQ date..</th>
+                <th >
+               Due Date&nbsp;
+                 <i className=" fas fa-caret-up" style={{display:"inline-block"}}></i>
+                 <i className=" fas fa-caret-down" style={{display:"block", marginTop:"-10px",marginLeft:"86%"}}></i>
+                </th>
+                <th>Ammount du..</th>
+                <th>Payment m..</th>
+                <th>
+                  status&nbsp;
+                <i className=" fas fa-caret-up" style={{display:"inline-block",marginLeft:"4%" ,marginTop:""}}></i>
+                 <i className=" fas fa-caret-down" style={{display:"block", marginTop:"-10px",marginLeft:"83%"}}></i>
+                </th>
+                <th></th>
+              </tr>
+              <tr>
+                
+                <td>
+                  <i className="fas fa-circle" style={{ color: "red" }}></i>
+                  12345
+                </td>
+                <td>Source Support Services, Inc</td>
+                <td>04/04/2020</td>
+                <td>02/05/2020</td>
+                <td>$2,123</td>
+                <td>-</td>
+                <td>open</td>
+                <td>
+                  <i
+                    className="fa fa-thumbs-up"
+                    style={{ color: "lightGray" }}
+                  ></i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <i className="fas fa-circle" style={{ color: "orange" }}></i>
+                  12345
+                </td>
+                <td>Source Support Services, Inc</td>
+                <td>04/04/2020</td>
+                <td>02/05/2020</td>
+                <td>$2,123</td>
+                <td>-</td>
+                <td>open</td>
+                <td>
+                  <i
+                    className="fa fa-thumbs-up"
+                    style={{ color: "lightGray" }}
+                  ></i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <i className="fas fa-circle" style={{ color: "green" }}></i>
+                  12345
+                </td>
+                <td>Source Support Services, Inc</td>
+                <td>04/04/2020</td>
+                <td>02/05/2020</td>
+                <td>$2,123</td>
+                <td>-</td>
+                <td>open</td>
+                <td>
+                  <i
+                    className="fa fa-thumbs-up"
+                    style={{ color: "lightGray" }}
+                  ></i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <i className="fas fa-circle" style={{ color: "red" }}></i>
+                  12345
+                </td>
+                <td>Source Support Services, Inc</td>
+                <td>04/04/2020</td>
+                <td>02/05/2020</td>
+                <td>$2,123</td>
+                <td>-</td>
+                <td>open</td>
+                <td>
+                  <i
+                    className="fa fa-thumbs-up"
+                    style={{ color: "lightGray" }}
+                  ></i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <i className="fas fa-circle" style={{ color: "red" }}></i>
+                  12345
+                </td>
+                <td>Source Support Services, Inc</td>
+                <td>04/04/2020</td>
+                <td>02/05/2020</td>
+                <td>$2,123</td>
+                <td>-</td>
+                <td>open</td>
+                <td>
+                  <i
+                    className="fa fa-thumbs-up"
+                    style={{ color: "lightGray" }}
+                  ></i>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div className="small">
+            <div className="row">
+              <div className="col-md-2"></div>
+
+              <button className="btn" style={{ marginLeft: "850px" }}>
+                Privious
+              </button>
+              <button className="btn" style={{ marginLeft: "10px" }}>
+                next
+              </button>
+            </div>
+          </div>
         </div>
       </div>
- 
-      <div className="col-md-10">
-      <div className="card">
-    <div className="card-header" style={{textAlign:"center"}}>PayIQ</div>
-    <div className="row">
-    <div className="col-md-2">
-
-    
-    <a href="#" class="action-button shadow animate blue">Hello</a>
- 
-</div>
-<div className="col-md-2">
-
-    
-<a href="#" class="action-button shadow animate red">How</a>
-</div>
-    
-<div className="col-md-2">
-
-<a href="#" class="action-button shadow animate green">Are</a>
-
-</div>
-<div className="col-md-2">
-
-    
-<a href="#" class="action-button shadow animate yellow">You?</a>
- 
-
-</div>
-<div className="col-md-2">
-
-    
-<a href="#" class="action-button shadow animate yellow">You?</a>
- 
-</div>
-
-  
-    
     </div>
-  
-    <div className="small">
-    <div className="row">
-    <div className="col-md-2">
-   &nbsp; &nbsp; &nbsp; &nbsp;
-    <button className="btn"><i class="fas fa-sliders-h"></i> Filter <i className=" fas fa-caret-down"></i></button>
-    
-    </div>
-    
-
-    <button className="btn" style={{marginLeft:"70%"}}>Export <i className=" fas fa-caret-down"></i></button>
-    
-    
-    </div>
-    </div>
-    
-    <table>
-        <tr>
-        
-            <th>&nbsp;
-            invoice
-            &nbsp;
-            <i className=" fas fa-caret-up"></i>
-            <i className=" fas fa-caret-down"></i>
-            
-            </th>
-            <th>
-            Vendor
-            </th>
-            <th>
-            PayIQ date..
-            </th>
-            <th>
-            Due date
-            </th>
-            <th>
-           Ammount du..
-            </th>
-            <th>
-            Payment m..
-            </th>
-            <th>
-            status
-            </th>
-             <th>
-            
-            </th>
-        </tr>
-        <tr>
-            <td>
-            <i className="fas fa-circle" style={{color:"red"}}></i>12345
-              
-            </td>
-            <td>
-            Source Support Services, Inc
-            </td>
-            <td>
-                04/04/2020
-            </td>
-            <td>
-            02/05/2020
-            </td>
-            <td>
-            $2,123
-            </td>
-            <td>
-            -
-            </td>
-            <td>
-          open
-            </td>
-            <td>
-          <i className="fa fa-thumbs-up"style={{color:"lightGray"}} ></i>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <i className="fas fa-circle" style={{color:"orange"}}></i>12345
-              
-            </td>
-            <td>
-            Source Support Services, Inc
-            </td>
-            <td>
-                04/04/2020
-            </td>
-            <td>
-            02/05/2020
-            </td>
-            <td>
-            $2,123
-            </td>
-            <td>
-            -
-            </td>
-            <td>
-          open
-            </td>
-            <td>
-          <i className="fa fa-thumbs-up"style={{color:"lightGray"}} ></i>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <i className="fas fa-circle" style={{color:"green"}}></i>12345
-              
-            </td>
-            <td>
-            Source Support Services, Inc
-            </td>
-            <td>
-                04/04/2020
-            </td>
-            <td>
-            02/05/2020
-            </td>
-            <td>
-            $2,123
-            </td>
-            <td>
-            -
-            </td>
-            <td>
-          open
-            </td>
-            <td>
-          <i className="fa fa-thumbs-up"style={{color:"lightGray"}} ></i>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <i className="fas fa-circle" style={{color:"red"}}></i>12345
-              
-            </td>
-            <td>
-            Source Support Services, Inc
-            </td>
-            <td>
-                04/04/2020
-            </td>
-            <td>
-            02/05/2020
-            </td>
-            <td>
-            $2,123
-            </td>
-            <td>
-            -
-            </td>
-            <td>
-          open
-            </td>
-            <td>
-        <i className="fa fa-thumbs-up"style={{color:"lightGray"}} ></i>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <i className="fas fa-circle" style={{color:"red"}}></i>12345
-              
-            </td>
-            <td>
-            Source Support Services, Inc
-            </td>
-            <td>
-                04/04/2020
-            </td>
-            <td>
-            02/05/2020
-            </td>
-            <td>
-            $2,123
-            </td>
-            <td>
-            -
-            </td>
-            <td>
-          open 
-          
-            </td>
-            <td>
-          <i className="fa fa-thumbs-up"style={{color:"lightGray"}} ></i>
-            </td>
-        </tr>
-        
-    </table>
-    
-    
-</div>
-<div className="small">
-    <div className="row">
-    <div className="col-md-2">
-   
-    </div>
-    
-    <button className="btn"style={{marginLeft:"850px"}} >Privious</button>
-    <button className="btn"style={{marginLeft:"10px"}} >next</button>
-    
-    
-    </div>
-    </div>
-    
-        </div>
-        </div>
-    </div>
-    
   );
 }
 
