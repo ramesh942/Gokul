@@ -8,7 +8,7 @@ function DashBoard() {
     <div className="container-fluid h-100">
       <div
         className="row"
-        style={{ backgroundColor: "#f9fafb" }}
+        style={{ backgroundColor: "white" }}
       >
         <div className="col-md-3">
           <div className="row" >
@@ -75,15 +75,19 @@ function DashBoard() {
               </div>
                 </div> */}
         </div>
-        <div className="col-md-3">
+        <div className="col-md-2" >
           <div class="text-icon-big rounded-circle ">V</div>
         </div>
-
+         <div className="col-md-12" style={{backgroundColor:"#f9fafb"}}>
+           <p></p>
+           </div>
+           
+           
         <div className="list-group" style={{ backgroundColor: "#f9fafb" }}>
-          <div className="col-md-4">
+          <div className="col-md-1">
             <p>
               <i className="fas fa-tachometer-alt mr-3">
-                &nbsp;&nbsp;&nbsp;DashBoard
+               &nbsp;&nbsp;&nbsp;DashBoard
               </i>
             </p>
             <p>
@@ -117,8 +121,9 @@ function DashBoard() {
             </p>
           </div>
         </div>
-
-        <div className="col-md-10">
+        
+        <div className="col-md-10" style={{marginTop:"0px",backgroundColor:"#f9fafb"}}>
+        <div className="scrollmenu">
           <div className="card" style={{ backgroundColor: "#FFF" }}>
             <div
               class="col-md-12"
@@ -174,7 +179,7 @@ function DashBoard() {
                 </button>
               </div>
             </div>
-   
+     
             <table>
               <tr>
             
@@ -205,7 +210,6 @@ function DashBoard() {
                 <th></th>
               </tr>
               <tr>
-                
                 <td>
                   <i className="fas fa-circle" style={{ color: "red" }}></i>
                   12345
@@ -297,6 +301,7 @@ function DashBoard() {
               </tr>
             </table>
           </div>
+          </div>
           <div className="small">
             <div className="row">
               <div className="col-md-2"></div>
@@ -310,6 +315,7 @@ function DashBoard() {
             </div>
           </div>
         </div>
+      
       </div>
     </div>
   );

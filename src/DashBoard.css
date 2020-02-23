@@ -129,6 +129,12 @@ th {
 	transition: all 0.1s;
 	-webkit-transition: all 0.1s;
 }
+div.scrollmenu {
+
+  overflow: auto;
+
+}
+
 
 
 
